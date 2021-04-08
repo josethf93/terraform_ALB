@@ -61,3 +61,6 @@ resource "aws_lb_target_group_attachment" "test" {
   port             = 80
 }
 
+output "endpoint" {
+  value = aws_lb.EPCCalb.dns_name
+}
